@@ -1,4 +1,5 @@
 # NYC 311 Service Request Analysis Project
+- **Description**: Analysis of NYC 311 service requests to identify patterns in complaint types by agency and borough.
 
 ## Data Source and Provenance
 - **Source**: [NYC Open Data 311 Service Requests](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9/)
@@ -37,4 +38,3 @@ See `data-dictionary.md` for full schema.
 - Empty `closed_date` = open/unresolved requests
 - Some `incident_zip` values are 0 or missing
 - String dates need parsing in Athena/SQL
-- [Add any other assumptions or issues you identified during data exploration]
