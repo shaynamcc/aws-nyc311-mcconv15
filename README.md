@@ -13,22 +13,26 @@
   - `s3://cmse492-mcconv15-nyc311-891376917256-us-east-1-an/raw/agencies/agencies.csv`
 
 ## Project Structure
-
+* side note, I used Google's Gemini to format this Project Structure section
 ```
 aws-nyc311-mcconv15/          # GitHub repo name
-├── README.md                 # Data source, S3 paths, assumptions
-├── DATA_DICTIONARY.md        # Column details
-├── raw/                      # Local copies of S3 uploads
-│   ├── complaints.csv
-│   └── agencies.csv
-├── sql/                      # Athena queries (to be populated)
-├── notes/                    # Observations, decisions (to be populated)
-├── notebooks/                # Code, data-loading, modeling
+├── README.md                 # Project overview, S3 paths, and setup
+├── DATA_DICTIONARY.md        # Detailed column definitions and schema
+├── sql/                      # Athena queries for data extraction & analysis
+│   ├── athena_to_modeling.sql
+│   ├── resolution_time.sql
+│   ├── stakeholder_query.sql
+│   └── warm_ups.sql
+├── notes/                    # Technical observations and project logs
+│   ├── modeling_plan.md
+│   └── sanity_check_log.md
+├── notebooks/                # Jupyter notebooks for ETL and ML
 │   ├── data_load_verify.ipynb
 │   ├── modeling_train_and_eval.ipynb
 │   ├── stakeholder_question03_linear_learner-Shayna_McConville.ipynb
-│   └── confusion_matrix.png
-└── reports/                  # Stakeholder outputs (to be populated)
+│   └── confusion_matrix.png  # Evaluation visualization
+├── reports/                  # Final stakeholder outputs and summaries
+└── raw/                     
 ```
 
 ## Data Summary
