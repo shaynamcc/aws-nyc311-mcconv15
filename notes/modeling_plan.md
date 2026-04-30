@@ -37,6 +37,16 @@ Highway Sign - Dangling                     1
 - **Metrics:** Accuracy, precision, recall
 - **Train/test split:** 80/20
 
+## Model Performance/Interpretation
+- My model performs pretty terribly. These 2 features selected are not a great fit to predict this target.
+
+Accuracy:  0.169
+Precision: 0.128
+Recall:    0.169
+
+## Limitation
+- I believe that my model does not work accurately because these features don't have a ton of correlation.
+
 ## Data quality notes
 - Need to drop rows where borough or agency is missing
 - Significant class imbalance
